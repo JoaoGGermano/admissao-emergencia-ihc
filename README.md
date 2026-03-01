@@ -1,0 +1,1 @@
+A técnica que eu achei mais desafiodora foi a da Carga Cognitiva, pois eu precisei diminuir ela, mas sem deixa o formulário simples demais.

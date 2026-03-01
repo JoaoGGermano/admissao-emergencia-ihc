@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Admissão de Emergência</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <div class="container">
+    <h1>Admissão de Emergência</h1>
+
+    <form id="formAdmissao">
+
+    
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+
+        <label>Nome Completo</label>
+        <input type="text" id="nome" required>
+        <span class="erro" id="erroNome"></span>
+
+        <label>Idade</label>
+     <input type="text" id="idade" maxlength="3" required>
+        <span class="erro" id="erroIdade"></span>
+
+        <label>CPF</label>
+        <input type="text" id="cpf" maxlength="14" required>
+        <span class="erro" id="erroCpf"></span>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contato de Emergência</legend>
+
+        <label>Nome do Contato</label>
+        <input type="text" id="contatoNome">
+
+        <label>Telefone</label>
+        <input type="text" id="telefone" maxlength="15">
+      </fieldset>
+
+      
+      <fieldset>
+  <legend>Condição Médica Inicial</legend>
+
+  <label>Sintomas Principais</label>
+  <textarea id="sintomas" rows="3" required></textarea>
+  <span class="erro" id="erroSintomas"></span>
+
+  <label style="margin-top:15px;">
+    Possui detalhes clínicos adicionais?
+  </label>
+
+  
+  <div class="radio-group">
+
+    <label class="radio-option sim">
+      <input type="radio" name="detalhes" value="sim">
+      <span>Sim</span>
+    </label>
+
+    <label class="radio-option nao">
+      <input type="radio" name="detalhes" value="nao" checked>
+      <span>Não</span>
+    </label>
+
+  </div>
+
+  
+  <div id="detalhesExtras" style="display:none;">
+    <label>Observações adicionais</label>
+    <textarea id="observacoes" rows="3"></textarea>
+  </div>
+
+</fieldset>
+
+      
+      <button type="submit" class="primary-btn">
+        Confirmar Admissão
+      </button>
+
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
